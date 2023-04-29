@@ -7,17 +7,14 @@ This is a fork from the [Catppuccin orginal repository][tmux-theme-repo] . I jus
 ### TPM
 
 1. Install [TPM](https://github.com/tmux-plugins/tpm)
-2. Add the Catppuccin plugin:
+2. Add the custom Catppuccin plugin:
 
 ```bash
-set -g @plugin 'catppuccin/tmux'
+set -g @plugin 'jrihon/thmux-theme'
 # ...alongside
 set -g @plugin 'tmux-plugins/tpm'
 ```
 
-3. (Optional) Set your preferred flavour, it defaults to `"mocha"`:
-
-    EDIT : This configuration only contains the mocha flavour
 
 ### Manual
 

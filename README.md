@@ -1,27 +1,7 @@
-<h3 align="center">
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/tmux/tmux">Tmux</a>
-	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-</h3>
+## Disclaimer
+This is a fork from the [Catppuccin orginal repository][tmux-theme-repo] . I just wanted to customise it to my own liking.
 
-<p align="center">
-    <a href="https://github.com/catppuccin/tmux/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/tmux?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/tmux/issues"><img src="https://img.shields.io/github/issues/catppuccin/tmux?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/tmux/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/tmux?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
-</p>
-
-<p align="center">
-  <img src="./assets/preview.webp"/>
-</p>
-
-## Themes
-
-- 🌻 [Latte](./catppuccin-latte.tmuxtheme)
-- 🪴 [Frappé](./catppuccin-frappe.tmuxtheme)
-- 🌺 [Macchiato](./catppuccin-macchiato.tmuxtheme)
-- 🌿 [Mocha](./catppuccin-mocha.tmuxtheme)
-
+[tmux-theme-repo]: https://github.com/catppuccin/tmux
 ## Usage
 
 ### TPM
@@ -37,9 +17,7 @@ set -g @plugin 'tmux-plugins/tpm'
 
 3. (Optional) Set your preferred flavour, it defaults to `"mocha"`:
 
-```bash
-set -g @catppuccin_flavour 'latte' # or frappe, macchiato, mocha
-```
+    EDIT : This configuration only contains the mocha flavour
 
 ### Manual
 
@@ -51,56 +29,6 @@ set -g @catppuccin_flavour 'latte' # or frappe, macchiato, mocha
 All flavours support certain levels of customization that match our [Catppuccin
 Style Guide][style-guide]. To add these customizations, add any of the following
 options to your Tmux configuration.
-
-In order to have the correct icons displayed please use your favorite nerd fonts patched font.
-
-##### Enable window tabs
-
-By default, the theme places the `window-status` in the `status-right`. With
-`@catppuccin_window_tabs_enabled` set to `on`, the theme will place the
-directory within the `status-right` and move the window names to the
-`window-status` format variables.
-
-```sh
-set -g @catppuccin_window_tabs_enabled on # or off to disable window_tabs
-```
-
-##### Configure separator
-
-By default, the theme will use a round separator for left and right.
-To overwrite it use `@catppuccin_left_separator` and `@catppuccin_right_separator` 
-
-```sh
-set -g @catppuccin_left_separator "█"
-set -g @catppuccin_right_separator "█"
-```
-
-##### Enable DateTime
-
-By default, the `date_time` componenet is set to off.
-It can be enabled by specifing any tmux date and time format.
-
-```sh
-set -g @catppuccin_date_time "%Y-%m-%d %H:%M"
-```
-
-##### Enable User
-
-By default, the `user` componenet is set to off.
-It can be enabled by toggoling it on.
-
-```sh
-set -g @catppuccin_user "on"
-```
-
-##### Enable Host
-
-By default, the `host` componenet is set to off.
-It can be enabled by toggoling it on.
-
-```sh
-set -g @catppuccin_host "on"
-```
 
 [style-guide]: https://github.com/catppuccin/catppuccin/blob/main/docs/style-guide.md
 
